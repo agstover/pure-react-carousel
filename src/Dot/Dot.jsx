@@ -38,7 +38,7 @@ const Dot = class Dot extends React.Component {
     carouselStore.setStoreState({
       currentSlide: newSlide,
       isPlaying: false,
-    }, onClick !== null && onClick.call(this, ev));
+    }, onClick !== null && onClick.call(this, ev, newSlide));
   }
 
   render() {
